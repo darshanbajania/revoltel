@@ -1,0 +1,361 @@
+{% extends 'revoltel_site/base.html' %}
+
+{% block content %}
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    .bg {
+        background-image: url('/static/revoltel_site/CCD.jpeg');
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .bg-heading {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 6em;
+    }
+
+    .bg-heading h1 {
+
+        font-size: 1.2em;
+    }
+
+    .main-back img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    @media (min-width: 40em) {
+        .bg {
+            height: 100vh;
+        }
+
+        .bg-heading {
+            top: 7em;
+        }
+
+        .bg-heading h1 {
+            font-size: 2em;
+        }
+
+        .main-back img {
+            height: 80vh;
+        }
+    }
+
+
+    .jumbo-back {
+        background-color: #FFF6EE;
+    }
+
+    .jumbo-back h1 {
+        color: #5C2E0C;
+    }
+
+    .jumbo-back p {
+        font-weight: 500;
+        color: #D67835;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .main-text {
+        font-size: 1.2em;
+        text-align: justify;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .main-text span {
+        font-size: 1.2em;
+        color: #5C2E0C;
+        font-weight: 700;
+    }
+
+    .product-highlights h1 {
+        font-size: 2em;
+        color: #5C2E0C;
+    }
+
+    .product-highlights p {
+        padding: .8em .5em;
+        background-color: #D67835;
+        border-radius: 10px;
+        color: #FFF6EE;
+        font-weight: 500;
+
+    }
+
+    .applications {
+        text-align: center;
+    }
+
+    .applications h1 {
+        color: #5C2E0C;
+    }
+
+    .applications-body {
+        margin-top: 2em;
+    }
+
+    .applications-body p {
+        background-color: #DFE0DF;
+        padding: 1em 2em;
+        font-size: 1.2em;
+        border-radius: 5px;
+        border-bottom: 3px solid #D67835;
+        letter-spacing: .1em;
+        font-weight: 700;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+
+    .applications-body p:hover {
+        background-color: #D67835;
+    }
+
+    .additional-content h1 {
+        font-size: 1.8em;
+        font-weight: 600;
+        color: #5C2E0C;
+        padding: 1em;
+    }
+
+    .additional-content p {
+        text-align: justify;
+        font-size: 1.15em;
+        padding: .8em .5em;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    @media (min-width: 40em) {
+        .additional-content h1 {
+            font-size: 2em;
+
+        }
+
+    }
+
+    /* download- link */
+    .download-link {
+        position: fixed;
+        bottom: 150px;
+        right: 50px;
+        z-index: 999;
+        background: white;
+        font-size: 1em;
+        color: #5C2E0C;
+        font-weight: 700;
+        border: 2px solid #5C2E0C;
+        border-radius: 5px;
+        padding: 0.2em;
+
+    }
+
+    .download-link a {
+        text-decoration: none;
+        color: #5C2E0C;
+    }
+
+    .download-link img {
+        height: 40px;
+        width: 40px;
+        /* box-shadow: 1px 28px 32px -16px rgba(0,0,0,0.2); */
+        background: white;
+    }
+
+    @media (min-width: 40em) {
+        .download-link {
+            bottom: 150px;
+            font-size: 1.5em;
+        }
+    }
+</style>
+{% comment %} <img src="/media/product_images/real_estate3.jpg" class="img-fluid back_image" height="600px" alt="">
+{% endcomment %}
+
+<body>
+    <!-- <div class="bg ">
+
+    </div> -->
+    <div class="main-back">
+        <!-- <img src="https://res.cloudinary.com/darshan1999/image/upload/v1606237415/RevolTel/Other_pages/CRM_hvw3ly.jpg"
+            alt=""> -->
+
+        <img src="https://res.cloudinary.com/darshan1999/image/upload/v1630777372/RevolTel/Other_pages/Blue-Planet-Studio-AdobeStock_362201496-1_ysmpsq.jpg"
+            alt="">
+    </div>
+    <div class="download-link">
+        <a href="https://res.cloudinary.com/darshan1999/image/upload/v1606240001/RevolTel/RevolTel_CRM_opdont.pdf"
+            download=""><img
+                src="https://res.cloudinary.com/darshan1999/image/upload/v1606237643/RevolTel/Logos/Download-Icon_lc8he0.png"
+                alt="">
+
+            Brochure</a>
+    </div>
+    <!-- 
+        <div class="bg-heading container ">
+            <h1 class="text-center">Call Center Dialer (CCD)</h1>
+        </div> -->
+    <div class="jumbotron jumbo-back jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-md-4">RevolTel CRM</h1>
+            <p class="lead">Automate Routine Tasks — Save More Time.</p>
+        </div>
+    </div>
+    <div class="container main-text card-body">
+        <p>
+            <span>As</span> your sales team grows, you need to make sure the processes you've designed can
+            scale, and that the same level of attention is given to your customers and leads. Automate repetitive tasks
+            with our CRM so that your sales team can spend less time on data entry and more time selling.
+            <br>
+            <br>
+
+        </p>
+
+
+
+    </div>
+
+    <div class="container additional-content">
+        <h1 class="text-center">
+            Why we are unique?
+        </h1>
+        <p>
+            All CRM providers charge you for licence every year. Here, we are providing our CRM with a one time payment
+            and there is no recurring licence fee. You can use it for "n" number of employees with life long licence.
+            <br>
+            <br>
+            The best feature we are offering is inbuilt calling feature. Just one click to contacts to make call to
+            India as well as all over the world.
+            <br>
+            <br>
+            When it comes to a CRM solution, one size doesn't fit all businesses. That's why our CRM lets you easily
+            customize your CRM interface to meet the particular requirements of your organization. Manage multiple
+            business processes with custom layouts, and create truly unique custom modules, buttons, and fields based on
+            your business needs.
+            <br>
+            <br>
+            You can only manage what you can measure. With advanced performance management features like reporting,
+            analytics, territory management, sales forecasting, and gamification, Our CRM has everything you need to
+            keep your team's performance at its peak, and have the right information and insights to make smarter
+            business decisions.
+        </p>
+    </div>
+
+    <!-- <div class="container product-highlights">
+        <div>
+            <h1 class="text-center">All for these why can't you go with RevolTel IP PBX ?
+            </h1>
+        </div>
+        <div class="row mt-5 row-cols-1 row-cols-sm-2 row-cols-md-3 text-center">
+            <div class="col">
+                <p>Unlimited Call Recording </p>
+            </div>
+            <div class="col">
+                <p>Audio Conference Bridging</p>
+            </div>
+            <div class="col">
+                <p>Call Queuing</p>
+            </div>
+            <div class="col">
+                <p>Call Monitoring</p>
+            </div>
+            <div class="col">
+                <p>Call Screening</p>
+            </div>
+            <div class="col">
+                <p>Dial By Name Directory</p>
+            </div>
+            <div class="col">
+                <p>Free Calls Between Subscribers</p>
+            </div>
+            <div class="col">
+                <p>Auto Attend</p>
+            </div>
+            <div class="col">
+                <p>Call Blocking</p>
+            </div>
+            <div class="col">
+                <p>Conversion on Voicemail To Email</p>
+            </div>
+            <div class="col">
+                <p>IVR</p>
+            </div>
+            <div class="col">
+                <p>Distributed Office Setup</p>
+            </div>
+            <div class="col">
+                <p> Call Detail Report</p>
+            </div>
+            <div class="col">
+                <p>Ip Phones</p>
+            </div>
+            <div class="col">
+                <p>Intercom Facility</p>
+            </div>
+            <div class="col">
+                <p>Voice Logger</p>
+            </div>
+            <div class="col">
+                <p>Centralized Administration</p>
+            </div>
+            <div class="col">
+                <p>No More Vendor Locks</p>
+            </div>
+            <div class="col">
+                <p>No Wiring </p>
+            </div>
+            <div class="col">
+                <p>Toll Free Service</p>
+            </div>
+            <div class="col">
+                <p>Video Conferencing</p>
+            </div>
+            <div class="col">
+                <p>Auto-Attendant</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container applications mt-4">
+        <div class="">
+            <h1>Who all can use our PBX ?</h1>
+        </div>
+        <div class="applications-body">
+            <p>
+                Real Estate
+            </p>
+            <p>
+                Resort
+            </p>
+            <p>
+                Colleges
+            </p>
+            <p>
+                Hospitals
+            </p>
+            <p>
+                Manufacturing Companies
+            </p>
+            <p>
+                Government Offices
+            </p>
+        </div>
+    </div> -->
+</body>
+{% endblock %}

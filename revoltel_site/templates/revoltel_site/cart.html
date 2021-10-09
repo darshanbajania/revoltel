@@ -1,0 +1,237 @@
+{% extends 'revoltel_site/base.html' %}
+
+{% block content %}
+<style>
+    /* selected products */
+    .selected_products {
+        margin: 0.5em 0em;
+        padding: 0.5em 0.5em;
+        background-color: #FFE9D0;
+    }
+
+    .selected_products img {
+        width: 100%;
+
+    }
+
+    .selected_products p {
+        font-size: .4em;
+        font-weight: 600;
+        margin-bottom: .5em;
+    }
+
+    .selected_products h5 {
+        font-size: .5em;
+        font-weight: 700;
+    }
+
+    .change_quantity {
+        display: inline-block;
+    }
+
+    .change_quantity form {
+        display: inline-block;
+    }
+
+    .change_quantity p {
+        font-size: .4em;
+        display: inline-block;
+        padding: .2em 0;
+    }
+
+    .change_quantity button {
+        border: none;
+        font-size: .35em;
+        background-color: #D67835;
+        border-radius: 5px;
+    }
+
+    .change_quantity button:hover {
+        background-color: #5C2E0C;
+    }
+
+    .remove-button button {
+        border: none;
+        font-size: .4em;
+        font-weight: 600;
+        background-color: #D67835;
+        border-radius: 5px;
+    }
+    .remove-button button:hover{
+        background-color: #5C2E0C;
+    }
+    @media (min-width: 40em){
+        .selected_products{
+            margin: 1em 0;
+        }
+        .selected_products img{
+            padding: .6em;            
+        }
+        .selected_products h5{
+            font-size: 1.4em;
+            padding: .5em;
+        }
+        .selected_products p{
+            font-size: 1em;
+            padding-left: .5em;
+        }
+        .change_quantity p{
+            font-size: 1em;
+        }
+        .change_quantity button{
+            font-size: .8em;
+        }
+        .remove-button button{
+            font-size: 1em;
+        }
+    }
+
+    /* Bill Description */
+
+    .bill-desc {
+        background-color: #FFF7F1;
+        /* padding: 1em; */
+
+    }
+
+    .bill-desc-item {
+        border-top:2px solid #D67835;
+        background-color: #FFE9D0;
+    }
+
+    .bill-desc h5 {
+        font-size: 1em;
+        font-weight: 700;
+        color: #5C2E0C;
+        padding-top: .5em;
+    }
+
+    .bill-desc p {
+        font-size: .5em;
+        margin-bottom: 0;
+        padding: .5em 0;
+        font-weight: 600;
+    }
+
+    .total {
+        border-top: 2px solid #5C2E0C;
+        font-size: 1.2em;
+        display: block;
+    }
+    .total p{
+       display: block; 
+        text-align: right;
+        padding: .3em;
+    }
+    @media (min-width: 40em){
+
+        .bill-desc h5{
+            font-size: 1.5em;
+        }
+
+        .bill-desc p{
+            font-size: 1em;
+            padding: .8em 0;
+        }
+        .total {
+            font-size: 1.4em;
+            padding-right: 1em;
+        }
+
+    }
+    .checkout-button{
+        margin-top: 1em;
+    }
+    .checkout-button a{
+
+        text-decoration: none;
+        color: white;
+        background-color: #D67835;
+        padding: .8em;
+        font-size: 1em;
+        border-radius: 5px;
+
+    }
+    .checkout-button a:hover{
+        background-color: #5C2E0C;
+    }
+</style>
+
+<div class="container">
+    <div class="row d-flex justify-content-between">
+        <div class="col-7 col-md-6">
+            {% for cart_item in cart_items %}
+            <div class="row selected_products">
+                <div class="col-4  p-0">
+                    <img src="{{cart_item.2}}" alt="">
+
+                </div>
+                <div class="col-8">
+                    <h5>{{cart_item.1}}</h5>
+                    <p>Price: {{cart_item.3}} /-</p>
+                    <div class="change_quantity">
+                        <p>
+                            Quantity:
+                        </p>
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="add" value="1">
+                            <input type="hidden" name="product_id" value="{{cart_item.0}}">
+                            <button type="submit"><i class="fas fa-plus"> </i> </button>
+                        </form>
+                        <p>{{cart_item.4}}</p>
+
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="minus" value="1">
+                            <input type="hidden" name="product_id" value="{{cart_item.0}}">
+                            <button type="submit"> <i class="fas fa-minus"> </i> </button>
+                        </form>
+                    </div>
+                    <div class="remove-button">
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="remove" value="yes">
+                            <input type="hidden" name="product_id" value="{{cart_item.0}}">
+                            <button type="submit">Remove</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+        <div class="col-5 col-md-4 bill-desc">
+            <div class="">
+                <h5 class="text-center">Your Purchase</h5>
+                {% for bill_item in bill_description %}
+                <div class="row bill-desc-item">
+                    <div class="col-8">
+                        <p>{{bill_item.0}} X {{bill_item.1}}</p>
+                    </div>
+                    <div class="col-4">
+                        <p>{{bill_item.2}}</p>
+                    </div>
+                </div>
+
+                {% endfor %}
+                <div class="row total">
+                    <div class="">
+                       <p>{{total_amount}} /-</p> 
+                    </div>
+                    
+                </div>
+
+                <div class="checkout-button text-center">
+                    <a href="{% url 'revoltel_site:payment_page' %}">Checkout</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- <h5>{{cart_content}}</h5>
+<h5>{{bill_description}}</h5> -->
+{% endblock  %}

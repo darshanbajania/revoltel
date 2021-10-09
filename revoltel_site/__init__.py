@@ -1,0 +1,1 @@
+default_app_config = 'revoltel_site.apps.RevoltelSiteConfig'

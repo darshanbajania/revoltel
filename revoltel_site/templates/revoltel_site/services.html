@@ -1,0 +1,350 @@
+{% extends 'revoltel_site/base.html' %}
+
+
+{% block content %}
+<style>
+    .main-body {
+        overflow: auto;
+    }
+
+
+    aside {
+        display: none;
+        padding-left: 1em;
+
+    }
+
+    section {
+        width: 100%;
+    }
+
+    @media (min-width: 40em) {
+        aside {
+            display: block;
+            width: 30%;
+            float: left;
+
+        }
+
+        section {
+            width: 70%;
+            float: right;
+
+        }
+    }
+
+    /* top image */
+    .top_image img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 40em) {
+        .top_image img {
+
+            width: 100%;
+            height: 80vh;
+        }
+    }
+
+    /* main text */
+    .main-text {
+        text-align: justify;
+        margin-top: 2em;
+        font-size: 1.1em;
+        padding: 1em;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .main-text span {
+        color: #5c2e0c;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+    @media (min-width: 40em) {
+        .main-text {
+            font-size: 1.4em;
+        }
+    }
+
+    /* plans */
+    .plans-text {
+        text-align: left;
+        color: #D67835;
+        font-size: 0.9em;
+        font-weight: 500;
+        padding: 1em;
+        margin-left: 2em;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .plans-text span {
+        color: #5c2e0c;
+        font-size: 1.2em;
+        font-weight: 600;
+
+    }
+
+    @media (min-width: 40em) {
+        .plans-text {
+            font-size: 1.2em;
+        }
+    }
+
+    .table-content {
+        padding: 1em;
+    }
+
+    table {
+        width: 100%;
+        background-color: #FFE9D0;
+        border-radius: 10px;
+
+    }
+
+    table th {
+
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+        margin: none;
+        text-align: left;
+        padding: 0.5em 0.5em;
+    }
+
+    table td {
+        font-size: .75em;
+        font-weight: 600;
+        padding: 0.7em 0.8em;
+    }
+
+    table .col1 {
+        text-align: left;
+        color: #5C2E0C;
+    }
+
+    table .col2 {
+        text-align: left;
+        color: #007761;
+    }
+
+    table .col3 {
+        text-align: left;
+        color: #6660AD;
+    }
+
+
+    .query-buttons a {
+        background-color: #A35A3F;
+        padding: 0.45em;
+        font-size: 0.8em;
+        font-weight: 600;
+        color: #FFF6EB;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .query-buttons a:hover {
+        background-color: #5c2e0c;
+    }
+
+    .query-buttons td {
+        padding: 1em 0.5em;
+    }
+
+    @media (min-width: 40em) {
+        table {
+            width: 75%;
+        }
+
+        table th {
+            padding: 0.5em 1.2em;
+            font-size: 1.5em;
+        }
+
+        table td {
+            font-size: 1.2em;
+            padding: 0.7em 1.4em;
+        }
+    }
+
+    .existing-application {
+        background-color: #FFE9D0;
+        margin: 1em;
+        padding: 1em 0.5em;
+        border-radius: 10px;
+
+    }
+
+    .existing-application p {
+        font-size: 0.9em;
+        font-weight: 600;
+        /* text-decoration: none; */
+        padding: 0.5em;
+        color: white;
+        background-color: #D67835;
+        border-radius: 15px;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .existing-application a {
+        font-size: 0.9em;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.5em;
+        color: white;
+        background-color: #A35A3F;
+        border-radius: 15px;
+    }
+
+    .existing-application a:hover {
+        background-color: #5c2e0c;
+    }
+
+    @media (min-width: 40em) {
+        .existing-application {
+            width: 80%;
+        }
+
+        .existing-application p {
+            font-size: 1.4em;
+            padding: 0.6em;
+        }
+
+        .existing-application a {
+            font-size: 1.1em;
+            padding: 0.7em;
+            margin-top: 1.5em;
+        }
+    }
+
+    /* .side-image */
+    .side-image {
+        margin-top: 7em;
+        margin-left: 1em;
+        /* border:5px dotted #D67835; */
+    }
+
+    .side-image img {
+        width: 90%;
+        height: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: 5px dotted #D67835;
+
+    }
+</style>
+<div class="main-body text-center">
+    <div class="top_image">
+        <!-- <img src="https://res.cloudinary.com/darshan1999/image/upload/v1606236460/RevolTel/Main_Page_Carousal/services2_zbl8gy.jpg"
+            alt=""> -->
+        <img src="https://res.cloudinary.com/darshan1999/image/upload/v1633605469/RevolTel/Other_pages/services_kibx0y.jpg"
+            alt="">
+    </div>
+    <div class="container">
+        <p class="main-text"><span>RevolTel</span> team is fully trained experienced on all type of asterisk based
+            projects. We have engineers in <strong>multiple
+                locations in India</strong> and we are providing <strong>24/7 dedicate support Engineers</strong> to our
+            valuable clients. Implementation
+            is simple but maintaining of the solution is the main thing for all solutions. We assure dedicate support to
+            the
+            clients with 99% uptime. Also our well trained developers from India and USA will develop all type of
+            telecom
+            requirements through asterisk platform.</p>
+
+
+
+    </div>
+
+    <aside>
+        <div class="side-image">
+
+            <div class="">
+                <img src="https://res.cloudinary.com/darshan1999/image/upload/v1606236611/RevolTel/Other_pages/carousal3_i6zcwj.jpg"
+                    alt="">
+            </div>
+            <div class="">
+                <img src="https://res.cloudinary.com/darshan1999/image/upload/v1606238750/RevolTel/Other_pages/carousal7_m294aw.jpg"
+                    alt="">
+            </div>
+
+        </div>
+
+    </aside>
+    <section>
+        <div class="container">
+            <p class="plans-text"> We have different types of SLA’s and AMC package for <span>RevolTel</span>
+                applications as well as all type of
+                asterisk based
+                client applications, in order to serve our clients with a better quality, Like:
+            </p>
+            <div class="table-content d-flex justify-content-center">
+                <table>
+                    <tr style="background-color: #FCBC93;  ">
+                        <th>Category</th>
+                        <th>Gold</th>
+                        <th>Platinum</th>
+                    </tr>
+                    <tr>
+                        <td class="col1">Suppport-Respond Time</td>
+                        <td class="col2">30 mins</td>
+                        <td class="col3">15 mins</td>
+
+                    </tr>
+                    <tr>
+                        <td class="col1">Escalation</td>
+                        <td class="col2">After 1hr</td>
+                        <td class="col3">After 45 mins</td>
+
+                    </tr>
+                    <tr>
+                        <td class="col1">Health Checkup</td>
+                        <td class="col2">Quaterly</td>
+                        <td class="col3">Monthly</td>
+
+                    </tr>
+                    <tr>
+                        <td class="col1">Timing of Support</td>
+                        <td class="col2">10am to 7pm</td>
+                        <td class="col3">24 hours</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Backup</td>
+                        <td style="border-bottom: 2px solid #D67835;" class="col2">Quaterly</td>
+                        <td style="border-bottom: 2px solid #D67835;" class="col3">Monthly</td>
+                    </tr>
+                    <tr class="query-buttons">
+                        <td class="col1"> </td>
+                        <td class=""><a href="https://api.whatsapp.com/send?phone=917071757570" target="_blank">Enquire
+                                Now</a> </td>
+                        <td class="col3"><a href="https://api.whatsapp.com/send?phone=917071757570"
+                                target="_blank">Enquire Now</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="existing-application">
+                    <div class="mb-3">
+                        <p>Development On Existing Application</p>
+                    </div>
+
+                    <div class="mt-5 mb-2">
+                        <a href="https://api.whatsapp.com/send?phone=917071757570" target="_blank">Enquire Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+{% endblock %}

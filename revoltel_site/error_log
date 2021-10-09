@@ -1,0 +1,184 @@
+[Mon Nov 23 16:18:28.509230 2020] [ssl:warn] [pid 1780] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 23 16:18:28.580472 2020] [ssl:warn] [pid 1781] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 23 16:18:28.581784 2020] [mpm_prefork:notice] [pid 1781] AH00163: Apache/2.4.43 (Unix) OpenSSL/1.1.1d mod_wsgi/4.7.1 Python/3.8 configured -- resuming normal operations
+[Mon Nov 23 16:18:28.581810 2020] [core:notice] [pid 1781] AH00094: Command line: '/opt/bitnami/apache/bin/httpd -f /opt/bitnami/apache/conf/httpd.conf'
+[Mon Nov 23 16:24:56.983468 2020] [mpm_prefork:error] [pid 1781] AH00161: server reached MaxRequestWorkers setting, consider raising the MaxRequestWorkers setting
+[Wed Nov 25 06:52:15.149575 2020] [mpm_prefork:notice] [pid 1781] AH00169: caught SIGTERM, shutting down
+[Wed Nov 25 06:52:15.594438 2020] [ssl:warn] [pid 16445] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 25 06:52:15.604555 2020] [ssl:warn] [pid 16446] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 25 06:52:15.605920 2020] [mpm_prefork:notice] [pid 16446] AH00163: Apache/2.4.43 (Unix) OpenSSL/1.1.1d mod_wsgi/4.7.1 Python/3.8 configured -- resuming normal operations
+[Wed Nov 25 06:52:15.605950 2020] [core:notice] [pid 16446] AH00094: Command line: '/opt/bitnami/apache/bin/httpd -f /opt/bitnami/apache/conf/httpd.conf'
+[Wed Nov 25 06:53:49.710371 2020] [mpm_prefork:error] [pid 16446] AH00161: server reached MaxRequestWorkers setting, consider raising the MaxRequestWorkers setting
+[Wed Nov 25 07:11:38.858375 2020] [mpm_prefork:notice] [pid 16446] AH00169: caught SIGTERM, shutting down
+[Wed Nov 25 07:11:39.288052 2020] [ssl:warn] [pid 16589] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 25 07:11:39.297321 2020] [ssl:warn] [pid 16590] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 25 07:11:39.298621 2020] [mpm_prefork:notice] [pid 16590] AH00163: Apache/2.4.43 (Unix) OpenSSL/1.1.1d mod_wsgi/4.7.1 Python/3.8 configured -- resuming normal operations
+[Wed Nov 25 07:11:39.298649 2020] [core:notice] [pid 16590] AH00094: Command line: '/opt/bitnami/apache/bin/httpd -f /opt/bitnami/apache/conf/httpd.conf'
+[Wed Nov 25 07:11:44.304282 2020] [mpm_prefork:error] [pid 16590] AH00161: server reached MaxRequestWorkers setting, consider raising the MaxRequestWorkers setting
+[Wed Nov 25 09:04:17.419117 2020] [mpm_prefork:notice] [pid 16590] AH00169: caught SIGTERM, shutting down
+[Wed Nov 25 09:04:17.849394 2020] [ssl:warn] [pid 17154] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 25 09:04:17.858862 2020] [ssl:warn] [pid 17155] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 25 09:04:17.860790 2020] [mpm_prefork:notice] [pid 17155] AH00163: Apache/2.4.43 (Unix) OpenSSL/1.1.1d mod_wsgi/4.7.1 Python/3.8 configured -- resuming normal operations
+[Wed Nov 25 09:04:17.860817 2020] [core:notice] [pid 17155] AH00094: Command line: '/opt/bitnami/apache/bin/httpd -f /opt/bitnami/apache/conf/httpd.conf'
+[Wed Nov 25 09:05:05.915164 2020] [mpm_prefork:error] [pid 17155] AH00161: server reached MaxRequestWorkers setting, consider raising the MaxRequestWorkers setting
+[Wed Nov 25 09:05:25.932384 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477] mod_wsgi (pid=17161): Failed to exec Python script file '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:05:25.932452 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477] mod_wsgi (pid=17161): Exception occurred processing WSGI script '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:05:25.934889 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477] Traceback (most recent call last):
+[Wed Nov 25 09:05:25.934969 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py", line 17, in <module>
+[Wed Nov 25 09:05:25.934979 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]     application = get_wsgi_application()
+[Wed Nov 25 09:05:25.934990 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Nov 25 09:05:25.934995 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]     django.setup(set_prefix=False)
+[Wed Nov 25 09:05:25.935004 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+[Wed Nov 25 09:05:25.935010 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Nov 25 09:05:25.935019 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+[Wed Nov 25 09:05:25.935024 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]     self._setup(name)
+[Wed Nov 25 09:05:25.935032 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+[Wed Nov 25 09:05:25.935037 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]     self._wrapped = Settings(settings_module)
+[Wed Nov 25 09:05:25.935045 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 177, in __init__
+[Wed Nov 25 09:05:25.935050 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Nov 25 09:05:25.935058 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "/opt/bitnami/python/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Wed Nov 25 09:05:25.935063 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Nov 25 09:05:25.935071 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Wed Nov 25 09:05:25.935079 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Wed Nov 25 09:05:25.935087 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Wed Nov 25 09:05:25.935096 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Wed Nov 25 09:05:25.935104 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+[Wed Nov 25 09:05:25.935112 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Wed Nov 25 09:05:25.935121 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/settings.py", line 14, in <module>
+[Wed Nov 25 09:05:25.935126 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477]     import cloudinary
+[Wed Nov 25 09:05:25.935169 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22477] ModuleNotFoundError: No module named 'cloudinary'
+[Wed Nov 25 09:05:28.188586 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648] mod_wsgi (pid=17162): Failed to exec Python script file '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:05:28.188658 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648] mod_wsgi (pid=17162): Exception occurred processing WSGI script '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:05:28.189337 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648] Traceback (most recent call last):
+[Wed Nov 25 09:05:28.189417 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py", line 17, in <module>
+[Wed Nov 25 09:05:28.189427 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]     application = get_wsgi_application()
+[Wed Nov 25 09:05:28.189437 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Nov 25 09:05:28.189443 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]     django.setup(set_prefix=False)
+[Wed Nov 25 09:05:28.189451 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+[Wed Nov 25 09:05:28.189458 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Nov 25 09:05:28.189466 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+[Wed Nov 25 09:05:28.189471 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]     self._setup(name)
+[Wed Nov 25 09:05:28.189479 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+[Wed Nov 25 09:05:28.189484 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]     self._wrapped = Settings(settings_module)
+[Wed Nov 25 09:05:28.189492 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 177, in __init__
+[Wed Nov 25 09:05:28.189497 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Nov 25 09:05:28.189505 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "/opt/bitnami/python/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Wed Nov 25 09:05:28.189510 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Nov 25 09:05:28.189518 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Wed Nov 25 09:05:28.189526 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Wed Nov 25 09:05:28.189535 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Wed Nov 25 09:05:28.189543 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Wed Nov 25 09:05:28.189551 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+[Wed Nov 25 09:05:28.189560 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Wed Nov 25 09:05:28.189568 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/settings.py", line 14, in <module>
+[Wed Nov 25 09:05:28.189573 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648]     import cloudinary
+[Wed Nov 25 09:05:28.189592 2020] [wsgi:error] [pid 17162] [client 103.85.9.74:21648] ModuleNotFoundError: No module named 'cloudinary'
+[Wed Nov 25 09:12:18.833143 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639] mod_wsgi (pid=17158): Failed to exec Python script file '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:12:18.833220 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639] mod_wsgi (pid=17158): Exception occurred processing WSGI script '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:12:18.833902 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639] Traceback (most recent call last):
+[Wed Nov 25 09:12:18.833969 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py", line 17, in <module>
+[Wed Nov 25 09:12:18.833978 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]     application = get_wsgi_application()
+[Wed Nov 25 09:12:18.833988 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Nov 25 09:12:18.833993 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]     django.setup(set_prefix=False)
+[Wed Nov 25 09:12:18.834002 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+[Wed Nov 25 09:12:18.834008 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Nov 25 09:12:18.834016 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+[Wed Nov 25 09:12:18.834021 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]     self._setup(name)
+[Wed Nov 25 09:12:18.834029 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+[Wed Nov 25 09:12:18.834034 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]     self._wrapped = Settings(settings_module)
+[Wed Nov 25 09:12:18.834042 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 177, in __init__
+[Wed Nov 25 09:12:18.834047 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Nov 25 09:12:18.834055 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "/opt/bitnami/python/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Wed Nov 25 09:12:18.834060 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Nov 25 09:12:18.834068 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Wed Nov 25 09:12:18.834076 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Wed Nov 25 09:12:18.834084 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Wed Nov 25 09:12:18.834093 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Wed Nov 25 09:12:18.834101 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+[Wed Nov 25 09:12:18.834109 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Wed Nov 25 09:12:18.834118 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/settings.py", line 14, in <module>
+[Wed Nov 25 09:12:18.834123 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639]     import cloudinary
+[Wed Nov 25 09:12:18.834141 2020] [wsgi:error] [pid 17158] [client 103.85.9.74:21639] ModuleNotFoundError: No module named 'cloudinary'
+[Wed Nov 25 09:12:35.826372 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505] mod_wsgi (pid=17161): Failed to exec Python script file '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:12:35.827677 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505] mod_wsgi (pid=17161): Exception occurred processing WSGI script '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:12:35.827864 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505] Traceback (most recent call last):
+[Wed Nov 25 09:12:35.827926 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py", line 17, in <module>
+[Wed Nov 25 09:12:35.827933 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]     application = get_wsgi_application()
+[Wed Nov 25 09:12:35.827944 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Nov 25 09:12:35.827950 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]     django.setup(set_prefix=False)
+[Wed Nov 25 09:12:35.827958 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+[Wed Nov 25 09:12:35.827964 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Nov 25 09:12:35.827973 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+[Wed Nov 25 09:12:35.827978 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]     self._setup(name)
+[Wed Nov 25 09:12:35.827986 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+[Wed Nov 25 09:12:35.827992 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]     self._wrapped = Settings(settings_module)
+[Wed Nov 25 09:12:35.828000 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 177, in __init__
+[Wed Nov 25 09:12:35.828005 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Nov 25 09:12:35.828014 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "/opt/bitnami/python/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Wed Nov 25 09:12:35.828019 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Nov 25 09:12:35.828027 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Wed Nov 25 09:12:35.828036 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Wed Nov 25 09:12:35.828045 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Wed Nov 25 09:12:35.828054 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Wed Nov 25 09:12:35.828063 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+[Wed Nov 25 09:12:35.828071 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Wed Nov 25 09:12:35.828080 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/settings.py", line 14, in <module>
+[Wed Nov 25 09:12:35.828085 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505]     import cloudinary
+[Wed Nov 25 09:12:35.828105 2020] [wsgi:error] [pid 17161] [client 103.85.9.74:22505] ModuleNotFoundError: No module named 'cloudinary'
+[Wed Nov 25 09:12:43.086844 2020] [mpm_prefork:notice] [pid 17155] AH00169: caught SIGTERM, shutting down
+[Wed Nov 25 09:12:43.254250 2020] [ssl:warn] [pid 17316] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 25 09:12:43.263071 2020] [ssl:warn] [pid 17317] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 25 09:12:43.265011 2020] [mpm_prefork:notice] [pid 17317] AH00163: Apache/2.4.43 (Unix) OpenSSL/1.1.1d mod_wsgi/4.7.1 Python/3.8 configured -- resuming normal operations
+[Wed Nov 25 09:12:43.265040 2020] [core:notice] [pid 17317] AH00094: Command line: '/opt/bitnami/apache/bin/httpd -f /opt/bitnami/apache/conf/httpd.conf'
+[Wed Nov 25 09:12:45.921027 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988] mod_wsgi (pid=17322): Failed to exec Python script file '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:12:45.921097 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988] mod_wsgi (pid=17322): Exception occurred processing WSGI script '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:12:45.921763 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988] Traceback (most recent call last):
+[Wed Nov 25 09:12:45.921829 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py", line 17, in <module>
+[Wed Nov 25 09:12:45.921838 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]     application = get_wsgi_application()
+[Wed Nov 25 09:12:45.921849 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Nov 25 09:12:45.921855 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]     django.setup(set_prefix=False)
+[Wed Nov 25 09:12:45.921864 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+[Wed Nov 25 09:12:45.921871 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Nov 25 09:12:45.921880 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+[Wed Nov 25 09:12:45.921885 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]     self._setup(name)
+[Wed Nov 25 09:12:45.921894 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+[Wed Nov 25 09:12:45.921899 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]     self._wrapped = Settings(settings_module)
+[Wed Nov 25 09:12:45.921907 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 177, in __init__
+[Wed Nov 25 09:12:45.921913 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Nov 25 09:12:45.921921 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "/opt/bitnami/python/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Wed Nov 25 09:12:45.921926 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Nov 25 09:12:45.921935 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Wed Nov 25 09:12:45.921944 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Wed Nov 25 09:12:45.921953 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Wed Nov 25 09:12:45.921961 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Wed Nov 25 09:12:45.921970 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+[Wed Nov 25 09:12:45.921979 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Wed Nov 25 09:12:45.922000 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/settings.py", line 14, in <module>
+[Wed Nov 25 09:12:45.922005 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988]     import cloudinary
+[Wed Nov 25 09:12:45.922024 2020] [wsgi:error] [pid 17322] [client 103.85.9.74:21988] ModuleNotFoundError: No module named 'cloudinary'
+[Wed Nov 25 09:12:47.767755 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761] mod_wsgi (pid=17323): Failed to exec Python script file '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:12:47.767829 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761] mod_wsgi (pid=17323): Exception occurred processing WSGI script '/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py'.
+[Wed Nov 25 09:12:47.768539 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761] Traceback (most recent call last):
+[Wed Nov 25 09:12:47.768605 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/wsgi.py", line 17, in <module>
+[Wed Nov 25 09:12:47.768615 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]     application = get_wsgi_application()
+[Wed Nov 25 09:12:47.768626 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Nov 25 09:12:47.768631 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]     django.setup(set_prefix=False)
+[Wed Nov 25 09:12:47.768652 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+[Wed Nov 25 09:12:47.768659 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Nov 25 09:12:47.768667 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+[Wed Nov 25 09:12:47.768672 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]     self._setup(name)
+[Wed Nov 25 09:12:47.768680 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+[Wed Nov 25 09:12:47.768697 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]     self._wrapped = Settings(settings_module)
+[Wed Nov 25 09:12:47.768706 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "/opt/bitnami/python/lib/python3.8/site-packages/django/conf/__init__.py", line 177, in __init__
+[Wed Nov 25 09:12:47.768711 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Nov 25 09:12:47.768719 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "/opt/bitnami/python/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Wed Nov 25 09:12:47.768724 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Nov 25 09:12:47.768733 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Wed Nov 25 09:12:47.768742 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Wed Nov 25 09:12:47.768750 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Wed Nov 25 09:12:47.768759 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Wed Nov 25 09:12:47.768768 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+[Wed Nov 25 09:12:47.768787 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Wed Nov 25 09:12:47.768797 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]   File "/opt/bitnami/projects/project_folder/bin/mysite/mysite/settings.py", line 14, in <module>
+[Wed Nov 25 09:12:47.768802 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761]     import cloudinary
+[Wed Nov 25 09:12:47.768822 2020] [wsgi:error] [pid 17323] [client 103.85.9.74:22761] ModuleNotFoundError: No module named 'cloudinary'

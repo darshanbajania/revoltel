@@ -1,0 +1,284 @@
+{% extends 'revoltel_site/base.html' %}
+
+{% block content %}
+
+<style>
+    .bg {
+        background-image: url('/static/revoltel_site/CCD.jpeg');
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .bg-heading {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 6em;
+    }
+
+    .bg-heading h1 {
+
+        font-size: 1.2em;
+    }
+
+    .main-back img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    @media (min-width: 40em) {
+        .bg {
+            height: 100vh;
+        }
+
+        .bg-heading {
+            top: 7em;
+        }
+
+        .bg-heading h1 {
+            font-size: 2em;
+        }
+
+        .main-back img {
+            height: 80vh;
+        }
+    }
+
+    .jumbo-back {
+        background-color: #FFF6EE;
+    }
+
+    .jumbo-back h1 {
+        color: #5C2E0C;
+    }
+
+    .jumbo-back p {
+        font-weight: 500;
+        color: #D67835;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .main-text {
+        font-size: 1.2em;
+        text-align: justify;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .main-text span {
+        font-size: 1.2em;
+        color: #5C2E0C;
+        font-weight: 700;
+    }
+
+    .product-highlights h1 {
+        font-size: 2em;
+        color: #5C2E0C;
+    }
+
+    .product-highlights p {
+        padding: .8em .5em;
+        background-color: #D67835;
+        border-radius: 10px;
+        color: #FFF6EE;
+        font-weight: 500;
+
+    }
+
+    .applications {
+        text-align: center;
+    }
+
+    .applications h1 {
+        color: #5C2E0C;
+    }
+
+    .applications-body {
+        margin-top: 2em;
+    }
+
+    .applications-body p {
+        background-color: #DFE0DF;
+        padding: 1em 2em;
+        font-size: 1.2em;
+        border-radius: 5px;
+        border-bottom: 3px solid #D67835;
+        letter-spacing: .1em;
+        font-weight: 700;
+
+    }
+
+    .applications-body p:hover {
+        background-color: #D67835;
+    }
+</style>
+{% comment %} <img src="/media/product_images/real_estate3.jpg" class="img-fluid back_image" height="600px" alt="">
+{% endcomment %}
+
+
+<!-- <div class="bg ">
+
+    </div> -->
+<div class="main-back">
+    <!-- <img src="https://res.cloudinary.com/darshan1999/image/upload/v1606236459/RevolTel/Main_Page_Carousal/revoltel_it_consultant_ny8t0t.jpg"
+        alt=""> -->
+
+    <img src="https://res.cloudinary.com/darshan1999/image/upload/v1630777346/RevolTel/Other_pages/REVOLTEL_DIALER_1_typkgd.jpg"
+        alt="">
+</div>
+<!-- 
+        <div class="bg-heading container ">
+            <h1 class="text-center">Call Center Dialer (CCD)</h1>
+        </div> -->
+<div class="jumbotron jumbo-back jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-md-4">RevolTel IT Consultant</h1>
+        <p class="lead">Are You Looking For A Software Or Telecom Consultant For Your New Business ?</p>
+    </div>
+</div>
+<div class="container main-text card-body">
+    <p>
+        At <span>RevolTel</span>, we serve you with end-to-end software and telecom consulting and
+        development solutions. We help you plan, conceive, incorporate, build, augment and take care of your
+        software with the help of our industry experts from different knowledge domains - offering you absolute
+        benefits from our expert consulting.
+        <br>
+        <br>
+        We have built different solutions customized to your requirement. Believing in the fact 'Informed businesses
+        are Successful businesses', we cater an organized system to allow you the right element of technology and
+        benefits from our process enablement - which we offer through our full-fledged software consulting
+        solutions.
+        <br>
+        <br>
+        Our knowledge in the consulting domain is vast and years of experiments optimizing software applications
+        have earned us the status of leading consultant in the domain. Our consultants focus on the facility
+        providing distinctive operational competency to the unique business needs reading them through business
+        strategy, changes in IT landscape, current pin-points etc. We have helped various solutions to be
+        implemented in the right manner while helping our clients get complete assurance of the right empanelment
+        and characterization of the process that holds the solution.
+    </p>
+
+</div>
+<!-- <div class="container product-highlights">
+        <div>
+            <h1 class="text-center">All for these why can't you go with RevolTel IP PBX ?
+            </h1>
+        </div>
+        <div class="row mt-5 row-cols-1 row-cols-sm-2 row-cols-md-3 text-center">
+            <div class="col">
+                <p>Unlimited Call Recording </p>
+            </div>
+            <div class="col">
+                <p>Audio Conference Bridging</p>
+            </div>
+            <div class="col">
+                <p>Call Queuing</p>
+            </div>
+            <div class="col">
+                <p>Call Monitoring</p>
+            </div>
+            <div class="col">
+                <p>Call Screening</p>
+            </div>
+            <div class="col">
+                <p>Dial By Name Directory</p>
+            </div>
+            <div class="col">
+                <p>Free Calls Between Subscribers</p>
+            </div>
+            <div class="col">
+                <p>Auto Attend</p>
+            </div>
+            <div class="col">
+                <p>Call Blocking</p>
+            </div>
+            <div class="col">
+                <p>Conversion on Voicemail To Email</p>
+            </div>
+            <div class="col">
+                <p>IVR</p>
+            </div>
+            <div class="col">
+                <p>Distributed Office Setup</p>
+            </div>
+            <div class="col">
+                <p> Call Detail Report</p>
+            </div>
+            <div class="col">
+                <p>Ip Phones</p>
+            </div>
+            <div class="col">
+                <p>Intercom Facility</p>
+            </div>
+            <div class="col">
+                <p>Voice Logger</p>
+            </div>
+            <div class="col">
+                <p>Centralized Administration</p>
+            </div>
+            <div class="col">
+                <p>No More Vendor Locks</p>
+            </div>
+            <div class="col">
+                <p>No Wiring </p>
+            </div>
+            <div class="col">
+                <p>Toll Free Service</p>
+            </div>
+            <div class="col">
+                <p>Video Conferencing</p>
+            </div>
+            <div class="col">
+                <p>Auto-Attendant</p>
+            </div>
+        </div>
+
+    </div> -->
+<div class="container applications mt-4">
+    <div class="">
+        <h1>We Provide Innovative Solutions for Following Industries</h1>
+    </div>
+    <div class="applications-body">
+        <p>
+            Education
+
+        </p>
+        <p>
+            Banking and Financial Companies
+        </p>
+        <p>
+            Colleges
+        </p>
+        <p>
+            Business
+        </p>
+        <p>
+            Transport
+        </p>
+        <p>
+            Food
+        </p>
+        <p>
+            Real Estate
+        </p>
+        <p>
+            Job/Career
+        </p>
+        <p>
+            Hospital
+        </p>
+        <p>
+            Call Centers
+        </p>
+    </div>
+</div>
+
+{% endblock %}

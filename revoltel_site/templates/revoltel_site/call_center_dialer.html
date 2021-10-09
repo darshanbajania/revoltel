@@ -1,0 +1,371 @@
+{% extends 'revoltel_site/base.html' %}
+
+{% block content %}
+{% comment %}
+<link rel="stylesheet" type="text/css" href="{% static '/revoltel_site/style.css' %}"> {% endcomment %}
+<style>
+    .bg {
+        background-image: url('/static/revoltel_site/CCD.jpeg');
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .bg-heading {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 6em;
+    }
+
+    .bg-heading h1 {
+
+        font-size: 1.2em;
+    }
+
+    .main-back img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    @media (min-width: 40em) {
+        .bg {
+            height: 100vh;
+        }
+
+        .bg-heading {
+            top: 7em;
+        }
+
+        .bg-heading h1 {
+            font-size: 2em;
+        }
+
+        .main-back img {
+            height: 80vh;
+        }
+    }
+
+    .jumbo-back {
+        background-color: #FFF6EE;
+    }
+
+    .jumbo-back h1 {
+        color: #5C2E0C;
+    }
+
+    .jumbo-back p {
+        font-weight: 500;
+        color: #D67835;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .main-text {
+        font-size: 1.2em;
+        text-align: justify;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .main-text span {
+        font-size: 1.2em;
+        color: #5C2E0C;
+        font-weight: 700;
+    }
+
+    .product-highlights h1 {
+        color: #5C2E0C;
+    }
+
+    .product-highlights p {
+        padding: .8em .5em;
+        background-color: #D67835;
+        border-radius: 10px;
+        color: #FFF6EE;
+        font-weight: 500;
+
+    }
+
+    .applications {
+        text-align: center;
+    }
+
+    .applications h1 {
+        color: #5C2E0C;
+    }
+
+    .applications-body {
+        margin-top: 2em;
+    }
+
+    .applications-body p {
+        background-color: #DFE0DF;
+        padding: 1em 2em;
+        font-size: 1.2em;
+        border-radius: 5px;
+        border-bottom: 3px solid #D67835;
+        letter-spacing: .1rem;
+        font-weight: 500;
+
+    }
+
+    .applications-body p:hover {
+        background-color: #D67835;
+    }
+
+    /* download- link */
+    .download-link {
+        position: fixed;
+        bottom: 150px;
+        right: 50px;
+        z-index: 999;
+        background: white;
+        font-size: 1em;
+        color: #5C2E0C;
+        font-weight: 500;
+        border: 2px solid #5C2E0C;
+        border-radius: 5px;
+        padding: 0.2em;
+
+    }
+
+    .download-link a {
+        text-decoration: none;
+        color: #5C2E0C;
+    }
+
+    .download-link img {
+        height: 40px;
+        width: 40px;
+        /* box-shadow: 1px 28px 32px -16px rgba(0,0,0,0.2); */
+        background: white;
+    }
+
+    @media (min-width: 40em) {
+        .download-link {
+            bottom: 150px;
+            font-size: 1.5em;
+        }
+    }
+</style>
+
+
+<!-- <div class="bg ">
+
+    </div> -->
+<div class="">
+    <div class="main-back">
+        <!-- <img src="https://res.cloudinary.com/darshan1999/image/upload/v1606236459/RevolTel/Main_Page_Carousal/revoltel_dialer2_o88rgh.jpg"
+            alt=""> -->
+        <img src="https://res.cloudinary.com/darshan1999/image/upload/v1630736773/RevolTel/Other_pages/wepik-202184-114344_diubr1.jpg"
+            alt="">
+    </div>
+    <div class="download-link">
+        <a href="https://res.cloudinary.com/darshan1999/image/upload/v1606240164/RevolTel/RevolTel_Brochure_Call_center_solution_mgok7v.pdf"
+            download=""><img
+                src="https://res.cloudinary.com/darshan1999/image/upload/v1606237643/RevolTel/Logos/Download-Icon_lc8he0.png"
+                alt="">
+
+            Brochure</a>
+    </div>
+    <!-- 
+        <div class="bg-heading container ">
+            <h1 class="text-center">Call Center Dialer (CCD)</h1>
+        </div> -->
+    <div class="jumbotron jumbo-back jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-md-4">Manage Your Call Center</h1>
+            <p class="lead">RevolTel Call center dialers are the complete call center solution!</p>
+        </div>
+    </div>
+    <div class="container main-text card-body">
+        <p>
+            <span> Call Center</span> aka BPO is the fastest growing industry in India. With the increase in offshore
+            business opportunities, the business process should highly be user-friendly and easy to connect. The
+            response time to clients and team should be short & smooth. Regardless of geographical boundaries
+            call-centres should opt for advanced solutions which enables and empowers their business processes.
+            <br>
+            <br>
+            We are committed to maximize sales productivity with minimum agents. We are not only providing the solution
+            infact we aim to maintain your entire Call Center Architecture as a Partner.
+
+        </p>
+
+    </div>
+    <div class="container product-highlights">
+        <div>
+            <h1 class="text-center">Product Highlights
+            </h1>
+        </div>
+        <div class="row mt-5 row-cols-1 row-cols-sm-2 row-cols-md-3 text-center">
+            <div class="col">
+                <p><strong>On Premises Dialer</strong> </p>
+            </div>
+            <div class="col">
+                <p> <strong>Cloud Based Dialer</strong> </p>
+            </div>
+            <div class="col">
+                <p>Manual, Progressive & Predictive Dialing</p>
+            </div>
+            <div class="col">
+                <p> Longest Idle-Agent based Routing</p>
+            </div>
+            <div class="col">
+                <p> Multiple Campaign Management</p>
+            </div>
+            <div class="col">
+                <p>Agent Inter-Dialing Support</p>
+            </div>
+            <div class="col">
+                <p>DNC List Management</p>
+            </div>
+            <div class="col">
+                <p>Real Time Supervision</p>
+            </div>
+            <div class="col">
+                <p>Call Transfer</p>
+            </div>
+            <div class="col">
+                <p>Outbound ACD</p>
+            </div>
+            <div class="col">
+                <p>Call Back Scheduling</p>
+            </div>
+            <div class="col">
+                <p>Call Forward & 3-way Conferencing</p>
+            </div>
+            <div class="col">
+                <p> Agent Call Intervention</p>
+            </div>
+            <div class="col">
+                <p>Music On-Hold</p>
+            </div>
+            <div class="col">
+                <p> Call Retrieval</p>
+            </div>
+            <div class="col">
+                <p>Interactive Voice Response (IVR)</p>
+            </div>
+            <div class="col">
+                <p>Skill-based Routing</p>
+            </div>
+            <div class="col">
+                <p>Most Idle Agent based Routing</p>
+            </div>
+            <div class="col">
+                <p> Call Backup Scheduling</p>
+            </div>
+            <div class="col">
+                <p> Automatic Call Distribution (ACD)</p>
+            </div>
+            <div class="col">
+                <p>Call Conferencing</p>
+            </div>
+            <div class="col">
+                <p>Inbound Call Pop Up</p>
+            </div>
+            <div class="col">
+                <p>Missed Call Alert</p>
+            </div>
+            <div class="col">
+                <p>Voice Blast with Report</p>
+            </div>
+            <div class="col">
+                <p>Press 1 Campaign</p>
+            </div>
+            <div class="col">
+                <p>SMS Integration</p>
+            </div>
+            <div class="col">
+                <p>WhatsApp Integration</p>
+            </div>
+            <div class="col">
+                <p>Feedback IVR</p>
+            </div>
+            <div class="col">
+                <p>Click2Call</p>
+            </div>
+            <div class="col">
+                <p>Real-Time Agent and Calls Report</p>
+            </div>
+            <div class="col">
+                <p>Inbound Call Forecasting Report</p>
+            </div>
+            <div class="col">
+                <p>Main Reports Screen</p>
+            </div>
+            <div class="col">
+                <p>Administration Screen</p>
+            </div>
+            <div class="col">
+                <p>Automated Reports Admin Screen</p>
+            </div>
+            <div class="col">
+                <p>Campaign Administration Screen</p>
+            </div>
+            <div class="col">
+                <p>Voice Logger</p>
+            </div>
+            <div class="col">
+                <p>QC Module</p>
+            </div>
+            <div class="col">
+                <p>Agent Performance Report</p>
+            </div>
+            <div class="col">
+                <p>Team Performance Report</p>
+            </div>
+            <div class="col">
+                <p>Outbound Report</p>
+            </div>
+            <div class="col">
+                <p>Inbound Report</p>
+            </div>
+            <div class="col">
+                <p>Listen/Barge and Whisper</p>
+            </div>
+            <div class="col">
+                <p>Missed Call Report</p>
+            </div>
+            <div class="col">
+                <p>Attendance Report etc...</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container applications mt-4">
+        <div class="">
+            <h1>Who all can use our Dialer?</h1>
+        </div>
+        <div class="applications-body">
+            <p>
+                Telemarketing Companies
+            </p>
+            <p>
+                Sales and Survey Campaign Companies
+            </p>
+            <p>
+                Collection and Finance Industry
+            </p>
+            <p>
+                Technical Support Projects
+            </p>
+            <p>
+                Inbound and Outbound Lead Generation Companies
+            </p>
+            <p>
+                Marketing Companies
+            </p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

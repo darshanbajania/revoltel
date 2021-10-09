@@ -1,0 +1,132 @@
+{% extends 'revoltel_site/base.html' %}
+
+{% block content %}
+<style>
+    .title-back img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    @media (min-width: 40em) {
+        .title-back img {
+            height: 75vh;
+        }
+    }
+
+    .avatar {
+        vertical-align: middle;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .main-content p {
+        /* text-align: left; */
+        text-align: justify;
+        font-size: 1em;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .main-content {
+        margin-top: 2em;
+    }
+
+    blockquote p {
+        font-size: 0.55em;
+        font-weight: 700;
+    }
+
+    @media (min-width: 40em) {
+        .main-content p {
+            font-size: 1.4em;
+        }
+
+        blockquote p {
+            font-size: 1em;
+        }
+
+    }
+</style>
+<div class=" title-back">
+    <!-- <img class="image-fluid"
+        src="https://res.cloudinary.com/darshan1999/image/upload/v1606236457/RevolTel/Main_Page_Carousal/about_us_oxtv4h.jpg"
+        alt=""> -->
+    <img class="image-fluid"
+        src="https://res.cloudinary.com/darshan1999/image/upload/v1633351430/RevolTel/Main_Page_Carousal/WhatsApp_Image_2021-10-04_at_3.38.16_PM_kgen52.jpg"
+        alt="">
+</div>
+<div class="container-fluid">
+
+    <!-- <div class="jumbotron title-back jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">About Us</h1>
+
+        </div>
+    </div> -->
+    <div class="container text-center">
+        <div class="card border-light">
+            <div class="card-body main-content">
+                <p> We are making the workplace communication better, simpler and cheaper since 2018. We believe you
+                    deserve
+                    absolutely no limits on how much you can communicate.</p>
+                <br>
+                <p>We strive to enable RevolTel - the world's telephony engine, power your business. Through cooperation
+                    and collective contribution, we aim to develop and popularise RevolTel to provide affordable
+                    communication solution. In today's time we look out for effective medium of communication which
+                    constantly evolving and most importantly economical. We make your move to Open Source IP Telephony a
+                    REALITY.</p>
+                <br>
+                <p>Main challenge with all call center solution is to troubleshoot the technical blockers and need to
+                    overcome this issue at an affordable cost.
+                    Our aim is to provide A-Z Telecom solutions and dedicate our support to clients. So as they can
+                    concentrate only on their marketing side and RevolTel will take care of the technical blockers with
+                    our own customized solution.</p>
+            </div>
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">" Better Communication is the 1st entry of all business "</p>
+                <!-- <footer class="blockquote-footer">Author in <cite title="Source Title">Source Title</cite></footer> -->
+            </blockquote>
+            <!-- <p class="lead">
+                We RevolTel located in Kerala from 2018 and we have 100+ satisfied clients all over south India. Our Aim
+                is to develop CRM which suits all type of industries.
+            </p>
+            <br>
+            <p class="text-muted text-left">Unlimited free callings to all over the world and with our solution, we can
+                assure 200% productivity with less employee strength.</p> -->
+        </div>
+    </div>
+</div>
+<!-- <div class="container">
+    <div class="row">
+        <div class="card col-4 text-center border-light ">
+            <div class=>
+                <img src="/media/default/default_male.jpg" class="avatar" alt="...">
+            </div>
+            <div class="card-body">
+                <p class="card-text ">Name</p>
+                <p class="card-text ">Founder</p>
+            </div>
+        </div>
+        <div class="card col-4 text-center border-light ">
+            <div class=>
+                <img src="/media/default/default_female.jpg" class="avatar" alt="...">
+            </div>
+            <div class="card-body">
+                <p class="card-text ">Name</p>
+                <p class="card-text ">Founder</p>
+            </div>
+        </div>
+        <div class="card col-4 text-center border-light ">
+            <div class=>
+                <img src="/media/default/default_male.jpg" class="avatar" alt="...">
+            </div>
+            <div class="card-body">
+                <p class="card-text ">Name</p>
+                <p class="card-text ">Founder</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+{% endblock %}
