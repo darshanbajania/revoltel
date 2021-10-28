@@ -14,7 +14,7 @@ from pathlib import Path
 import cloudinary
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,12 +41,13 @@ INSTALLED_APPS = [
     'revoltel_site',
 ]
 
-#add config 
+
+# add config
 cloudinary.config(
-  cloud_name = 'darshan1999',
-  api_key = '914179865436577',
-  api_secret = '4cz-_JUUtXQmRk_L6FbWvZbNgq0',
-  secure = True
+    cloud_name='darshan1999',
+    api_key='914179865436577',
+    api_secret='4cz-_JUUtXQmRk_L6FbWvZbNgq0',
+    secure=True
 )
 
 MIDDLEWARE = [
@@ -73,7 +74,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            },
+        },
     },
 ]
 
@@ -129,9 +130,9 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(Base_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

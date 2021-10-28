@@ -16,7 +16,7 @@ import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -28,7 +28,7 @@ SECRET_KEY = 'u#5(xud!ye_q5n$8+m%+uzi&6%yb3vexh!^r-8l^=mhg57jr2b'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CORS_ORIGIN_ALLOW_ALL = True    
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 CORS_ORIGIN_WHITELIST = (
@@ -50,12 +50,15 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
-#add config 
+# recaptcha key
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LfDGzMaAAAAAE5d4rLvHojqxgow_yCz8zALKaH3'
+
+# add config
 cloudinary.config(
-  cloud_name = 'darshan1999',
-  api_key = '914179865436577',
-  api_secret = '4cz-_JUUtXQmRk_L6FbWvZbNgq0',
-  secure = True
+    cloud_name='darshan1999',
+    api_key='914179865436577',
+    api_secret='4cz-_JUUtXQmRk_L6FbWvZbNgq0',
+    secure=True
 )
 
 
@@ -68,7 +71,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -142,7 +145,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS=(os.path.join(BASE_DIR,'static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
